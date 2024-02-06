@@ -1,0 +1,128 @@
+/*---- the * symbol selects everything so this global rule makes everything have a 0px margin and 0px padding.-----*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*---- utility styles ----*/
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    border: 4px solid #000;
+}
+
+/*----- global styles ------*/
+
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
+}
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+#header {
+
+}
+
+#header h1 a {
+	background-image: url("../img/header.jpg");
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	height: 140px;
+}
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+#content h2 {
+	color: #7d8f55;
+	font-size: 1.9em;
+}
+#content h3 {
+	color: #486f52;
+	font-size: 1.7em;
+}
+#content h4 {
+	color: #014047;
+	font-size: 1.2em;
+}
+#content p {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#content p.alert {
+	background-color: #ddf0ed;
+	color: #212241;
+	padding: 1em;
+}
+#content dt {
+	font-weight: 900;
+	font-size: 18px;
+}
+#content dl {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#content a {
+	color:#486f52;
+}
+#content a:hover {
+	background-color: #c9eab5;
+	color: #212241;
+}
+#footer {
+	background-color: #000120;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#footer h6 a {
+	color: #fff;
+}
