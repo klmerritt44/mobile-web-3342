@@ -18,31 +18,34 @@ html {
   }
 
   main {
-    width: 956px;
+    /*--width: 956px;--*/
     margin: 20px auto;
     border: 1px solid #000;
-    background-image:url("../img/grid.png");
   }
   
   header.primary, footer.primary{
-    width: 916px;
-    margin: 20px;
+    /*---width 916px----*/
+    width: 95.8158%;
+    margin: 2.0920%;
     background: rgba(0,0,0,.2);
     border: 1px solid #000;
+    padding:20px;
     float: left;
   }
 
   #blog {
+    /*-----width 604px----*/
     background: rgba(0,0,0,.2);
-    width: 604px;
-    margin-left: 20px;
+    width: 63.1799%;
+    margin-left: 2.0920%;
     padding: 20px;
     float: left;
   }
 
   aside {
+    /*----width 292px---*/
     background: rgba(0,0,0,.2);
-    width: 292px;
+    width: 30.5439%;
     margin-left: 20px;
     padding: 20px;
     float: left;
