@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  main {
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px, 200px, 100px;
+    margin: auto;
+  }
+  
+  header.primary{
+    background: rgba(0,0,0,.2);
+    grid-column: 1/12;
+  }
+
+  #blog {
+    background: rgba(0,0,0,.2);
+    grid-column: 1/8;
+  }
+
+  aside {
+    background: rgba(0,0,0,.2);
+  }
+
+  footer.primary {
+
+  }
+
+
