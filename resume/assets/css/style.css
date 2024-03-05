@@ -5,10 +5,12 @@
 :root{
   --main-bg-color: #E8E8E8;
   --primary-type-color: #222222;
-  --primary-header-color: #3a4469;
+  --primary-header-color: #212b4e;
   --subheader-color: #d90754;
   --primary-button-color: #25293d;
   --primary-link-color: #2a809d;
+  --accent-color: #45bac4;
+  --accent-color-rgb: rgba(69, 186, 196, 0.324);
   }
   
   html {
@@ -23,40 +25,39 @@
   /* ------ Typography -------*/
   body {
     font-family: 'Martel', serif;
-    font-weight: 400;
-    font-size: 1.1em;
+    font-weight: 375;
+    font-size: 1em;
     color: var(--primary-type-color);
     line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
-    font-weight: 500;
     color: var(--primary-header-color);
   }
 
  main h1 {
-    font-weight: 600;
+    font-weight: 650;
     font-size: 2em;
-    line-height: 1.2em;
+    color: #3a4469;
+    line-height: 1.4em;
+  }
+
+  .subtitle {
+    font-weight: 350;
+    font-size: 1.3em;
   }
 
   main h2 {
     color:#D90754;
     background: var(--main-bg-color);
+    font-size: 1.6em;
+    font-weight: 600;
   }
 
-  .subtitle {
-    font-weight: 300;
-  }
-
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
+  main h3 {
+    font-weight: 500;
+    font-size: 1.3em;
   }
   
   /* ------ Fluid Images -------*/
@@ -70,8 +71,7 @@
     width: 375px; /*design time*/
     background: var(--main-bg-color);
     border: solid 2px;
-    margin: auto;
-    padding: 1.7em;
+    margin: 0 auto;
   }
 
 /*------ Global Styles ------*/
@@ -104,12 +104,22 @@ nav li {
 
 nav a:link, nav a:visited {
   display: block;
-  padding: 8px 20px;
+  padding: 8px 10px;
   border: solid 1px;
   text-align: center;
-  background-color: var(--primary-button-color);
+  background: var(--primary-button-color);
   text-decoration: none;
   color: #fff;
+  font-size: .8em;
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background: rgba(37, 41, 61, 0.9);
+}
+
+#about {
+  border-bottom: 4px double var(--accent-color);
 }
 
 main {
@@ -117,8 +127,63 @@ main {
   background: var(--main-bg-color);
 }
 
-#courses h3 {
-  
+dl {
+  display: grid;
+  /*shorthand*/
+  grid-template: repeat(8, auto) / 8em 1fr;
+  font-size:.9rem;
+}
+
+dt {
+  font-weight: 800;
+  grid-column: 1;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--accent-color-rgb);
+}
+
+dd {
+  margin: 0;
+  grid-column: 2;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--accent-color-rgb);
+}
+
+.related-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  gap: 20px;
+}
+
+.related-links a {
+  text-align: center;
+  padding: 10px;
+  background: var(--primary-button-color);
+  color: #fff;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.related-links a:hover{
+  background: rgba(37, 41, 61, 0.9);
+}
+
+#skills {
+  border-bottom: 4px double var(--accent-color);
+}
+
+#experience {
+  border-bottom: 4px double var(--accent-color);
+}
+
+.job {
+  border-bottom: 1px solid var(--accent-color-rgb);
+}
+
+
+#courses {
+
 }
 
 footer {
@@ -133,15 +198,6 @@ footer {
   display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -154,12 +210,6 @@ footer {
   width: 1px;
   /* 1 */
 }
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
@@ -178,21 +228,4 @@ footer {
 
 .invisible {
   visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
 }
