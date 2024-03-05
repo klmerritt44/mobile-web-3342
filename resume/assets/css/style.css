@@ -1,98 +1,134 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/* --- Resume Stylesheet ----- */
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/* CSS Custom Properties */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+:root{
+  --main-bg-color: #E8E8E8;
+  --primary-type-color: #222222;
+  --primary-header-color: #3a4469;
+  --subheader-color: #d90754;
+  --primary-button-color: #25293d;
+  --primary-link-color: #2a809d;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ------ Typography -------*/
+  body {
+    font-family: 'Martel', serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: var(--primary-type-color);
+    line-height: 1.6;
+  }
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    color: var(--primary-header-color);
+  }
+
+ main h1 {
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+  main h2 {
+    color:#D90754;
+    background: var(--main-bg-color);
+  }
+
+  .subtitle {
+    font-weight: 300;
+  }
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /* ------ Fluid Images -------*/
+  img {
+    max-width: 100%;
+  }
+  
+  /* ------ Utility Classes  -------*/
+
+  .container {
+    width: 375px; /*design time*/
+    background: var(--main-bg-color);
+    border: solid 2px;
+    margin: auto;
+    padding: 1.7em;
+  }
+
+/*------ Global Styles ------*/
+
+body {
+  background: var(--main-bg-color);
+  color: var(--primary-font-color);
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+a:link,
+a:visited {
+  color: var(--primary-link-color);
+  margin: auto;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+nav {
+  padding: 1px;
 }
 
-/*
- * A better looking default horizontal rule
- */
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 20px 0px 20px;
 
-hr {
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:link, nav a:visited {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+  padding: 8px 20px;
+  border: solid 1px;
+  text-align: center;
+  background-color: var(--primary-button-color);
+  text-decoration: none;
+  color: #fff;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+main {
+  padding: 1em;
+  background: var(--main-bg-color);
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+#courses h3 {
+  
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+footer {
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+  /* ----- Helper Classes ---- */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
+  .hidden,
 [hidden] {
   display: none !important;
 }
@@ -160,88 +196,3 @@ textarea {
 .clearfix::after {
   clear: both;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
