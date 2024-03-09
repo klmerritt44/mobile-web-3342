@@ -35,10 +35,14 @@
     font-family: 'Karla', sans-serif;
     color: var(--primary-header-color);
   }
+  
+  strong {
+    color: #3a3a3a;
+  }
 
  main h1 {
-    font-weight: 650;
-    font-size: 2em;
+    font-weight: 700;
+    font-size: 2.4em;
     color: #3a4469;
     line-height: 1.4em;
   }
@@ -51,15 +55,19 @@
   main h2 {
     color:#D90754;
     background: var(--main-bg-color);
-    font-size: 1.6em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 750;
   }
 
-  main h3 {
-    font-weight: 500;
-    font-size: 1.3em;
+  h3 {
+    font-weight: 650;
+    font-size: 1.6em;
   }
   
+  h4 {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
   /* ------ Fluid Images -------*/
   img {
     max-width: 100%;
@@ -123,8 +131,15 @@ nav a:hover {
 }
 
 main {
+  display: grid;
   padding: 1em;
   background: var(--main-bg-color);
+  grid-template-areas: 
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills";
 }
 
 dl {
@@ -169,21 +184,51 @@ dd {
   background: rgba(37, 41, 61, 0.9);
 }
 
+#title{
+  grid-area: title;
+}
+
+#about {
+  grid-area: about;
+  border-bottom: 4px double var(--accent-color);
+}
+
 #skills {
   border-bottom: 4px double var(--accent-color);
+  grid-area: skills;
 }
 
 #experience {
   border-bottom: 4px double var(--accent-color);
+  grid-area: experience;
+}
+
+#education {
+  border-bottom: 4px double var(--accent-color);
+  grid-area: education;
+  padding-bottom: 20px;
 }
 
 .job {
   border-bottom: 1px solid var(--accent-color-rgb);
 }
 
+.job,
+.certificate {
+  border-bottom: 1px solid var(--accent-color-1);
+  padding-bottom: 20px;
+}
+
+.job *[itemprop="jobTitle"],
+.job *[itemprop="name"],
+.job *[itemprop="url"],
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"] {
+  display: block;
+}
 
 #courses {
-
+  
 }
 
 footer {
