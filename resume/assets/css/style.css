@@ -76,7 +76,7 @@
   /* ------ Utility Classes  -------*/
 
   .container {
-    width: 375px; /*design time*/
+    width: 768px; /*design time*/
     background: var(--main-bg-color);
     border: solid 2px;
     margin: 0 auto;
@@ -203,6 +203,10 @@ dd {
   grid-area: experience;
 }
 
+#experience span.date {
+  font-size: .9em;
+}
+
 #education {
   border-bottom: 4px double var(--accent-color);
   grid-area: education;
@@ -227,7 +231,7 @@ dd {
   display: block;
 }
 
-#courses {
+#courses div *[itemprop="name"] {
   
 }
 
