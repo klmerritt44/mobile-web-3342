@@ -76,7 +76,7 @@
   /* ------ Utility Classes  -------*/
 
   .container {
-    width: 768px; /*design time*/
+    width: 767px; /*design time*/
     background: var(--main-bg-color);
     border: solid 2px;
     margin: 0 auto;
@@ -130,7 +130,7 @@ nav a:hover {
   border-bottom: 4px double var(--accent-color);
 }
 
-main {
+main.container {
   display: grid;
   padding: 1em;
   background: var(--main-bg-color);
@@ -231,8 +231,9 @@ dd {
   display: block;
 }
 
-#courses div *[itemprop="name"] {
-  
+#courses div[itemprop="name"] {
+  font-size: .8em;
+  padding: 10px 0px 10px 0px
 }
 
 footer {
@@ -240,7 +241,7 @@ footer {
   padding: 20px 0;
 }
 
-  /* ----- Helper Classes ---- */
+  /* --------- Helper Classes ------------ */
 
   .hidden,
 [hidden] {
@@ -278,3 +279,58 @@ footer {
 .invisible {
   visibility: hidden;
 }
+
+
+/*-------------Media Queries---------------*/
+
+@media screen and (min-width:768px) {
+  main.container {
+    display: grid;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+    "title title"
+    "about about"
+    "education education"
+    "skills experience";
+  }
+
+  /*nested grid*/
+
+  #about {
+    display: grid;
+    grid-template-columns: 325px 1fr auto;
+    gap: 2em;
+    grid-template-areas: 
+    "bio details details"
+    "related related related"
+  }
+
+  .bio{
+    grid-area: bio;
+  }
+
+  .details{
+    grid-area: details;
+  }
+
+  .related-links{
+    grid-area: related;
+  }
+
+  dl {
+    display: grid;
+    /*shorthand*/
+    grid-template:repeat(7,100px) / 7em 1fr;
+
+
+  }
+
+  dd{
+    padding-bottom:0;
+  }
+
+
+
+}
+  
+
