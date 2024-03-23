@@ -193,6 +193,10 @@ dd {
   border-bottom: 4px double var(--accent-color);
 }
 
+#about .related-links a svg {
+  display: none;
+}
+
 #skills {
   border-bottom: 4px double var(--accent-color);
   grid-area: skills;
@@ -203,8 +207,9 @@ dd {
   grid-area: experience;
 }
 
-#experience span.date {
-  font-size: .9em;
+#experience span.date,
+.job div[itemtype="https://schema.org/EmployeeRole"] {
+  font-size: .8em;
 }
 
 #education {
@@ -302,7 +307,12 @@ footer {
     gap: 2em;
     grid-template-areas: 
     "bio details details"
-    "related related related"
+    "related related related";
+  }
+
+  #about .related-links a svg {
+    display: unset;
+    width: 35px;
   }
 
   .bio{
@@ -320,15 +330,13 @@ footer {
   dl {
     display: grid;
     /*shorthand*/
-    grid-template:repeat(7,100px) / 7em 1fr;
-
+    grid-template:repeat(4,100px) / 7em 1fr;
 
   }
 
   dd{
     padding-bottom:0;
   }
-
 
 
 }
