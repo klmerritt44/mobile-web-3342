@@ -3,14 +3,16 @@
 /* CSS Custom Properties */
 
 :root{
-  --main-bg-color: #E8E8E8;
-  --primary-type-color: #222222;
+  --main-bg-color: #d8cbcb;
+  --container-color: #f6f0f0;
+  --primary-type-color: #212427;
   --primary-header-color: #212b4e;
   --subheader-color: #d90754;
   --primary-button-color: #25293d;
   --primary-link-color: #2a809d;
   --accent-color: #45bac4;
   --accent-color-rgb: rgba(69, 186, 196, 0.324);
+  --footer-text: #E8E8E8;
   }
   
   html {
@@ -29,6 +31,7 @@
     font-size: 1em;
     color: var(--primary-type-color);
     line-height: 1.6;
+    margin: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -54,7 +57,6 @@
 
   main h2 {
     color:#D90754;
-    background: var(--main-bg-color);
     font-size: 2em;
     font-weight: 750;
   }
@@ -76,9 +78,7 @@
   /* ------ Utility Classes  -------*/
 
   .container {
-    width: 767px; /*design time*/
-    background: var(--main-bg-color);
-    border: solid 2px;
+    max-width: 991px; 
     margin: 0 auto;
   }
 
@@ -103,6 +103,7 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 20px 20px 0px 20px;
+  gap: 1em;;
 
 }
 
@@ -133,7 +134,7 @@ nav a:hover {
 main.container {
   display: grid;
   padding: 1em;
-  background: var(--main-bg-color);
+  background: var(--container-color);
   grid-template-areas: 
     "title"
     "about"
@@ -244,6 +245,13 @@ dd {
 footer {
   text-align: center;
   padding: 20px 0;
+  color: var(--footer-text);
+  background-color: var(--primary-header-color);
+  margin: 0px;
+}
+
+footer a:link a:visited {
+  color: var(--footer-text);
 }
 
   /* --------- Helper Classes ------------ */
@@ -337,6 +345,68 @@ footer {
   dd{
     padding-bottom:0;
   }
+
+}
+
+  /* --------desktop view----------- */
+
+  @media screen and (min-width:992px) {
+    main.container {
+      display: grid;
+      grid-template-columns: 30% auto;
+      grid-template-areas:
+      "title title"
+      "about about"
+      "education education"
+      "skills experience";
+      gap: 2em;
+    }
+
+    #skills, #experience {
+      border: none;
+    }
+
+
+    /* --nested grid-- */
+
+    #about {
+      display: grid;
+      grid-template-columns: 325px 1fr auto;
+      gap: 2em;
+      grid-template-areas: 
+      "bio bio details"
+      "related related related";
+    }
+  
+    #about .related-links a svg {
+      display: unset;
+      width: 45px;
+    }
+
+  
+    .bio{
+      grid-area: bio;
+    }
+  
+    .details{
+      grid-area: details;
+    }
+  
+    .related-links{
+      grid-area: related;
+    }
+  
+    dl {
+      display: grid;
+      /*shorthand*/
+      grid-template:repeat(7,60px) / 7em 1fr;
+      grid-template-rows: 7 ;
+  
+    }
+  
+    dd{
+      padding-bottom:0;
+    }
 
 
 }
