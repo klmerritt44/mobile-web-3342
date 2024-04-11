@@ -1,0 +1,10 @@
+.banner{
+    background-image: url(../img/raised-garden-bed.jpg);
+}
+
+
+div.container-fluid.py-5{
+    background: rgba(0, 0, 0, 0.065);
+    background-color: rgba 
+    z-index: 5;
+}
