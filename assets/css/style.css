@@ -1,18 +1,74 @@
 /*-----Course homepage stylesheet-----*/
 
+:root {
+    --main-bg-color: #7e90c1;
+    --main-container-color: #f2f1f1;
+    --primary-type-color: #212427;
+    --primary-header-color: #212b4e;
+    --subheader-color: #52576b;
+    --primary-button-color: #25293d;
+    --primary-link-color: #1c3a5a;
+    --accent-color: #45bac4;
+    --accent-color-rgb: rgba(69, 186, 196, 0.324);
+}
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------responsive images--------- */
+
+img {
+    max-width:100%;
+}
+
+/* ---------global styles--------- */
 body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 1em;
     color: #3D3D3D;
-    background-color: #E1E9F0;
+    background-color: var(--main-bg-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23eeeef7' fill-opacity='0.28'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+header.primary {
+    color:
+
 }
 
 header.primary h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2.5em;
-    color: #323954;
+    font-size: 2.4em;
+    color: var(--primary-header-color);
 }
+
+header.primary h2 {
+    color: var(--subheader-color);
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.7em;
+    color: var(--subheader-color);
+    
+}
+
+.container {
+    background-color: var(--main-container-color);
+    margin: 30px;
+    padding: 10px;
+}
+
+
+
+
+
 
 /*--media queries---*/
 
