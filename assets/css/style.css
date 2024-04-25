@@ -39,7 +39,10 @@ body {
 
 header.primary {
     background-image: url(https://klmerritt44.github.io/mobile-web-3342/assets/img/bugs-eye-view.jpg);
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 10px;
 }
 
 header.primary h1 {
