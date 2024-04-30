@@ -63,15 +63,37 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+   .container{
+    width:80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
 
-/*
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    padding: 5px;
+}
+
+.img-left {
+    float:left;
+    margin: 10px 20px 10px 0px;
+    padding: 5px;
+}
+
+.img-center {
+    display: block;
+    padding: 5px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+
+   /*
  * Hide visually and from screen readers
  */
 
