@@ -7,6 +7,7 @@
     --primary-type-color: #212427;
     --primary-header-color: #212b4e;
     --subheader-color: #363946;
+    --subheader-color-inverse: #929abc;
     --primary-button-color: #25293d;
     --primary-link-color: #1c3a5a;
     --accent-color: #45bac4;
@@ -43,7 +44,7 @@ header.primary {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
-    padding: 10px;
+    padding: 40px;
     color: #fff;
     top: 0px;
     right: 0px;
@@ -66,14 +67,25 @@ header.primary::before {
     opacity: 0.4;
 }
 
-header.primary nav a{
-    text-decoration: none;
+header.primary nav ul a{
     color: #fff;
 }
+
 
 header.primary h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 2.4em;
+}
+
+header.primary h2 {
+    color: var(--subheader-color-inverse);
+}
+
+#header-content {
+    width: 80vw;
+    margin: 30px auto;
+    padding: 10px 30px;
+    position: relative;
 }
 
 
@@ -90,6 +102,7 @@ h2 {
     margin: 30px auto;
     padding: 10px 30px;
 }
+
 
 /*--media queries---*/
 
