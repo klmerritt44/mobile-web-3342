@@ -1,11 +1,12 @@
 /*-----Course homepage stylesheet-----*/
 
+
 :root {
     --main-bg-color: #7e90c1;
     --main-container-color: #f2f1f1;
     --primary-type-color: #212427;
     --primary-header-color: #212b4e;
-    --subheader-color: #52576b;
+    --subheader-color: #363946;
     --primary-button-color: #25293d;
     --primary-link-color: #1c3a5a;
     --accent-color: #45bac4;
@@ -35,25 +36,46 @@ body {
     color: #3D3D3D;
     background-color: var(--main-bg-color);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23eeeef7' fill-opacity='0.28'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    margin: 0px;
 }
 
 header.primary {
-    background-image: url(https://klmerritt44.github.io/mobile-web-3342/assets/img/bugs-eye-view.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
     padding: 10px;
+    color: #fff;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    padding-top: 10px;
+    background-color: #000;
+}
+
+header.primary::before {
+    background-image: url(https://klmerritt44.github.io/mobile-web-3342/assets/img/bugs-eye-view.jpg);
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+header.primary nav a{
+    text-decoration: none;
+    color: #fff;
 }
 
 header.primary h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 2.4em;
-    color: var(--primary-header-color);
 }
 
-header.primary h2 {
-    color: var(--subheader-color);
-}
 
 h2 {
     font-family: 'Work Sans', sans-serif;
@@ -64,14 +86,10 @@ h2 {
 
 .container {
     background-color: var(--main-container-color);
-    margin: 30px;
-    padding: 10px;
+    width: 80vw;
+    margin: 30px auto;
+    padding: 10px 30px;
 }
-
-
-
-
-
 
 /*--media queries---*/
 

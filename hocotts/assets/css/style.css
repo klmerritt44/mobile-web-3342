@@ -1,5 +1,8 @@
 /*----hocott's website stylesheet--------*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html {
   color: #222;
   font-size: 1em;
@@ -63,14 +66,33 @@ textarea {
   resize: vertical;
 }
 
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*----- global styles ----- */
+ body {
+  font-family: 'open sans';
+  font-size: 1rem;
+ }
+
+ h1,h2,h3,h4 {
+  font-family: domine;
+ }
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
    .container{
-    width:80vw;
+    /*width:80vw;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 900px;*/
+    width: 400px;
+    border: 2px solid;
 }
 
 .img-right{
@@ -249,4 +271,33 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* logo color scheme 
+orange #f7941e
+*/
+
+/* Color Theme Swatches in Hex */
+.Beautiful-home-garden-in-full-bloom-1-hex { color: #F20519; }
+.Beautiful-home-garden-in-full-bloom-2-hex { color: #F20574; }
+.Beautiful-home-garden-in-full-bloom-3-hex { color: #034001; }
+.Beautiful-home-garden-in-full-bloom-4-hex { color: #72A603; }
+.Beautiful-home-garden-in-full-bloom-5-hex { color: #9ABF49; }
+
+
+/* Color Theme Swatches in RGBA */
+.Beautiful-home-garden-in-full-bloom-1-rgba { color: rgba(242, 4, 24, 1); }
+.Beautiful-home-garden-in-full-bloom-2-rgba { color: rgba(242, 4, 115, 1); }
+.Beautiful-home-garden-in-full-bloom-3-rgba { color: rgba(3, 63, 1, 1); }
+.Beautiful-home-garden-in-full-bloom-4-rgba { color: rgba(114, 165, 3, 1); }
+.Beautiful-home-garden-in-full-bloom-5-rgba { color: rgba(153, 191, 72, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Beautiful-home-garden-in-full-bloom-1-hsla { color: hsla(354, 96, 48, 1); }
+.Beautiful-home-garden-in-full-bloom-2-hsla { color: hsla(331, 96, 48, 1); }
+.Beautiful-home-garden-in-full-bloom-3-hsla { color: hsla(118, 96, 12, 1); }
+.Beautiful-home-garden-in-full-bloom-4-hsla { color: hsla(78, 96, 33, 1); }
+.Beautiful-home-garden-in-full-bloom-5-hsla { color: hsla(78, 48, 51, 1); }
+
+
+
 
