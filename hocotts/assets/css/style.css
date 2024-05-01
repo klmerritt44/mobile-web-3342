@@ -189,12 +189,24 @@ header {
   color: #EBEBD3;
   padding: 1em 0;
   position: relative;
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed.jpg);
 }
 
 header::after {
   content: '';
   clear: both;
   display: block;
+}
+
+header.primary h1 a {
+  background: url(../includes/logo.png) no-repeat;
+  display: block;
+  width: 300px;
+  height: 70px;
+  margin: 0px auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .logo {
