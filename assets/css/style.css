@@ -104,7 +104,21 @@ h2 {
 }
 
 
-/*--media queries---*/
+/*---------------media queries-------------------*/
+
+@media screen and (min-width:768px){
+  
+    header.primary{
+      height: 90vh;
+    }
+}
+
+@media screen and (min-width:1400px){
+  
+    header.primary{
+      height: 80vh;
+    }
+}
 
 
 /*---color codes-----
