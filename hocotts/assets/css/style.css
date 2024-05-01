@@ -16,12 +16,20 @@ html {
     box-sizing: inherit;
   }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
+  /*-------------- global styles ------------- */
+ body {
+  font-family: 'open sans';
+  font-size: 1rem;
+  background: #e6e5e0;
+  /*---design time constraints
+  width: 375px;
+  border: 1px solid; ----*/
+ }
+
+ h1,h2,h3,h4 {
+  font-family: domine;
+ }
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -32,12 +40,6 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -72,28 +74,13 @@ img {
   height: auto;
 }
 
-/*----- global styles ----- */
- body {
-  font-family: 'open sans';
-  font-size: 1rem;
-  width: 375px;
-  border: 1px solid;
- }
 
- h1,h2,h3,h4 {
-  font-family: domine;
- }
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/*----------------helper classes ----------------*/
 
    .container{
     width:80vw;
     margin: 40px auto;
     max-width: 900px;
-    
 }
 
 .img-right{
@@ -191,15 +178,169 @@ img {
 
 /* -----authors css ------*/
 
+.nav-container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: #e6e5e0;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: #034001;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+/*   display: none; */
+}
+
+.site-nav--open {
+  clip-path: circle(250% at top right);
+/*   display: block; */
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #9ABF49;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #e6e5e0;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #72A603;
+  color: #72A603;
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.8);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #215202;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+  color: #e6e5e0;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
 
 
 
+/*--------------media queries-----------------------*/
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+@media (min-width: 768px) {
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+    color: #034001;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  
+  .site-nav--icon {
+    display: none;
+  }
+  
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -279,6 +420,9 @@ img {
   }
 }
 
+
+
+
 /* logo color scheme 
 orange #f7941e
 */
@@ -289,6 +433,7 @@ orange #f7941e
 .Beautiful-home-garden-in-full-bloom-3-hex { color: #034001; }
 .Beautiful-home-garden-in-full-bloom-4-hex { color: #72A603; }
 .Beautiful-home-garden-in-full-bloom-5-hex { color: #9ABF49; }
+
 
 
 /* Color Theme Swatches in RGBA */
