@@ -76,6 +76,8 @@ img {
  body {
   font-family: 'open sans';
   font-size: 1rem;
+  width: 375px;
+  border: 1px solid;
  }
 
  h1,h2,h3,h4 {
@@ -88,11 +90,10 @@ img {
    ========================================================================== */
 
    .container{
-    /*width:80vw;
+    width:80vw;
     margin: 40px auto;
-    max-width: 900px;*/
-    width: 400px;
-    border: 2px solid;
+    max-width: 900px;
+    
 }
 
 .img-right{
@@ -187,6 +188,12 @@ img {
 .clearfix::after {
   clear: both;
 }
+
+/* -----authors css ------*/
+
+
+
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
