@@ -9,6 +9,7 @@
   --light-bg: #e6e5e0;
   --dark-bg: #034001;
   --dark-bg-opacity: rgba(2, 30, 1, 0.7);
+  --standard-padding: 10px;
 }
 
 html {
@@ -359,8 +360,6 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 }
 
-
-
 .services .grid article a {
   display: block;
   font-size: .8em;
@@ -376,6 +375,23 @@ grid-template-rows: 1fr 1fr;
   text-decoration: none;
   color: var(--body-text-inverse);
 }
+
+footer {
+  background: var(--dark-bg);
+  color: var(--body-text-inverse);
+  margin: 0px auto;
+  padding: var(--standard-padding);
+}
+
+footer > * {
+  display: block;
+  margin: auto;
+  text-align: center;
+}  
+
+footer a {
+  color: var(--body-text-inverse)
+}  
 
 
 
