@@ -208,11 +208,12 @@ img {
 
 .site-nav {
   position: absolute;
-  top: 100%;
+  top: 0%;
   right: 0%;
   background: #034001;
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
+  z-index: 1;
 /*   display: none; */
 }
 
@@ -246,7 +247,6 @@ img {
 .site-nav a:hover,
 .site-nav a:focus {
   background: #72A603;
-  color: #659204;
 }
 
 .site-nav--icon {
@@ -311,11 +311,7 @@ header::after {
   clear: both;
   display: block;
 }
-/*
-header.primary {
-  height: 50vh;
-}
-*/
+
 header.primary h1 a {
   background: url(../includes/logo.png) no-repeat;
   display: block;
@@ -350,10 +346,8 @@ header.primary h1 a {
 }
 
 #cta a:hover {
-  
-  
+  background: var(--dark-bg-opacity);
 }
-
 
 .grid {
   display: grid;
@@ -414,6 +408,7 @@ header.primary h1 a {
   .site-nav a:hover,
   .site-nav a:focus {
     background: transparent;
+    color: #659204;
   }
   
   .site-nav--icon {
