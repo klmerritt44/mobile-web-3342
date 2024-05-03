@@ -32,7 +32,7 @@ html {
   background: var(--light-bg);
   margin: 0px;
   /*---design time constraints ----*/
-  width: 400px;
+  width: 768px;
   border: 1px solid; 
  }
 
@@ -475,6 +475,15 @@ footer a {
   
   .site-nav--icon {
     display: none;
+  }
+
+  div.grid.image-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  #blog div.grid {
+    grid-template-columns: 1fr 1fr;
   }
   
 }
