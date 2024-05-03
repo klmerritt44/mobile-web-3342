@@ -9,7 +9,7 @@
   --light-bg: #e6e5e0;
   --dark-bg: #034001;
   --dark-bg-opacity: rgba(2, 30, 1, 0.7);
-  --standard-padding: 10px;
+  --standard-padding: 30px;
 }
 
 html {
@@ -331,7 +331,7 @@ header.primary h1 a {
   position: relative;
 }
 
-#cta {
+#cta-section {
   background: var(--dark-bg-opacity);
   color: var(--body-text-inverse);
   padding: 1em;
@@ -339,25 +339,46 @@ header.primary h1 a {
   bottom: 20px;
 }
 
-#cta a {
+#cta-section a {
   color: var(--body-text-inverse);
   text-decoration: none;
   background: var(--dark-bg);
   padding: 0.5em;
 }
 
-#cta a:hover {
+#cta-section a:hover {
   background: var(--dark-bg-opacity);
 }
 
+section.services {
+  margin: 20px;
+}
+
+section.services article {
+  text-align: center;
+
+}
+
+section.services a {
+  text-decoration: none;
+  color: var(--body-text);
+  font-weight: bold;
+}
+
+section.services article a:hover {
+  text-decoration: underline;
+  color: var(--body-text);
+  font-weight: bold;
+}
 
 .grid {
   display: grid;
 }
 
 .grid.image-gallery {
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
 }
 
 .services .grid article a {
@@ -374,6 +395,24 @@ grid-template-rows: 1fr 1fr;
   text-align: center;
   text-decoration: none;
   color: var(--body-text-inverse);
+}
+
+#blog article.post{
+  margin-bottom: 30px;
+  border-bottom: solid 1px;
+  padding-bottom: 10px;
+}
+
+#blog article.post a {
+  text-decoration: none;
+  color: var(--body-text);
+  font-size: .9em;
+}
+
+#blog a svg {
+  width: 15px;
+  margin-left: 5px;
+
 }
 
 footer {
