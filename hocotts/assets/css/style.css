@@ -82,9 +82,9 @@ img {
 }
 
 
-/*----------------helper classes ----------------*/
+/*----------------utility classes ----------------*/
 
-   .container{
+  .container{
     width:80vw;
     margin: 40px auto;
     max-width: 900px;
@@ -107,6 +107,10 @@ img {
     padding: 5px;
     margin: 20px auto;
     padding: 5px;
+}
+
+a.cta {
+
 }
 
 
@@ -183,25 +187,13 @@ img {
   clear: both;
 }
 
-/* -----authors css ------*/
+/* -----author's css ------*/
 
 .nav-container {
-  width: 95%;
+  width: 75%;
   max-width: 1000px;
   margin: 0;
   background: var(--light-bg);
-}
-
-.logo {
-  float: left;
-  font-size: 1rem;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.logo span {
-  font-weight: 400;
 }
 
 .site-nav {
@@ -310,6 +302,10 @@ header::after {
   display: block;
 }
 
+header.primary h1 {
+  float: left;
+}
+
 header.primary h1 a {
   background: url(../includes/logo.png) no-repeat;
   display: block;
@@ -322,7 +318,7 @@ header.primary h1 a {
 }
 
  #primary-hero {
-  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed-450.jpg);
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed-450.jpg);
   background: cover;
   background-repeat: none;
   height: 40vh;
@@ -380,7 +376,7 @@ section.services article a:hover {
 .grid.image-gallery {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .services .grid article a {
@@ -485,7 +481,7 @@ footer a {
   }
 
   #primary-hero {
-    background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed-800.jpg);
+    background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed-800.jpg);
   }
 
   #blog div.grid {
@@ -497,7 +493,7 @@ footer a {
 
 @media (min-width: 1200px) {
     #primary-hero {
-      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed.jpg);
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed.jpg);
       height: 60vh;
       background: cover;
     }
