@@ -322,7 +322,7 @@ header.primary h1 a {
 }
 
  #primary-hero {
-  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed-450.jpg);
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed-450.jpg);
   background: cover;
   background-repeat: none;
   height: 40vh;
@@ -485,7 +485,7 @@ footer a {
   }
 
   #primary-hero {
-    background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed-800.jpg);
+    background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed-800.jpg);
   }
 
   #blog div.grid {
@@ -497,7 +497,7 @@ footer a {
 
 @media (min-width: 1200px) {
     #primary-hero {
-      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed.jpg);
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/images/raised-garden-bed.jpg);
       height: 60vh;
       background: cover;
     }
