@@ -62,7 +62,7 @@
       <h2>Landscaping Services</h2>
       <div class="grid image-gallery">
         <article>
-          <img src="assets/img/lawn-care-200.jpg" srcset="assets/img/lawn-care-100jpg 400v" alt=""/>
+          <img src="assets/img/lawn-care-200.jpg" alt=""/>
           <a href="#">Lawn Care</a>
         </article>
         <article>
@@ -92,9 +92,14 @@
       <div class ="container">
         <h2>Garden Guru Blog</h2>
         <div class="grid">
-          <img src="assets/img/spider-plant-700.jpg" 
-          srcset="assets/img/spider-plant-375.jpg 400w,
-          assets/img/spider-plant-400.jpg 800vw"
+          <picture>
+            <img src="assets/img/spider-plant-375.jpg"/>
+            <source media ="(min-width:800px)" srcset="assets/img/spider-plant-400.jpg">
+            <source media ="(min-width:900px)" srcset="assets/img/spider-plant-700.jpg">
+          </picture>
+          <img src="assets/img/spider-plant-375.jpg" 
+          srcset="assets/img/spider-plant-375.jpg 375w,
+          assets/img/spider-plant-700.jpg 800w"
           alt="hanging spider plant"/>
           <div class="posts">
           <article class="post">
