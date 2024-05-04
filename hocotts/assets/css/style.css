@@ -353,10 +353,6 @@ section.services article {
 
 }
 
-section.services img {
-  max-width: 200px;
-}
-
 section.services a {
   text-decoration: none;
   color: var(--body-text);
@@ -382,6 +378,7 @@ section.services article a:hover {
 .services .grid article a {
   display: block;
   font-size: .8em;
+  margin-top: 10px;
 }
 
 .services a.cta-button {
