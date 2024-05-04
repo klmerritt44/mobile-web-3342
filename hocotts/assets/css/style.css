@@ -319,8 +319,8 @@ header.primary h1 a {
 
  #primary-hero {
   background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed-450.jpg);
-  background: cover;
-  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 40vh;
   position: relative;
 }
