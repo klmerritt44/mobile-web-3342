@@ -31,9 +31,6 @@ html {
   font-size: 1rem;
   background: var(--light-bg);
   margin: 0px;
-  /*---design time constraints ----*/
-  width: 768px;
-  border: 1px solid; 
  }
 
  h1,h2,h3,h4 {
@@ -325,8 +322,9 @@ header.primary h1 a {
 }
 
  #primary-hero {
-  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed.jpg);
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed-450.jpg);
   background: cover;
+  background-repeat: none;
   height: 40vh;
   position: relative;
 }
@@ -351,12 +349,16 @@ header.primary h1 a {
 }
 
 section.services {
-  margin: 20px;
+  margin: 30px;
 }
 
 section.services article {
   text-align: center;
 
+}
+
+section.services img {
+  max-width: 200px;
 }
 
 section.services a {
@@ -482,10 +484,32 @@ footer a {
     grid-template-rows: none;
   }
 
+  #primary-hero {
+    background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed-800.jpg);
+  }
+
   #blog div.grid {
     grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
   }
   
+}
+
+@media (min-width: 1200px) {
+    #primary-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/includes/raised-garden-bed.jpg);
+      height: 60vh;
+      background: cover;
+    }
+
+    section.services {
+      margin: 60px;
+    }
+
+    #blog div.grid {
+      column-gap: 60px;
+    }
+
 }
 
 @media only screen and (min-width: 35em) {
