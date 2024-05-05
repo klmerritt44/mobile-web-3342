@@ -38,6 +38,20 @@ html {
   font-family: domine;
  }
 
+ h2 {
+  font-size: 2em;
+ }
+
+ h3 {
+  font-size: 1.4em;
+ }
+
+ figcaption {
+  font-weight: bold;
+  text-align: center;
+  padding-top: .5em;
+ }
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -89,7 +103,7 @@ img {
 
   .container{
     width:80vw;
-    margin: 40px auto;
+    margin: 40px auto 80px auto;
     max-width: 1000px;
 }
 
@@ -196,9 +210,15 @@ a:hover {
   clear: both;
 }
 
+.three-col-grid {
+  display: grid;
+  margin-bottom: 30px;
+}
+
+
 /* #endregion utility */
 
-/* -----author's css ------*/
+/* #region main css------*/
 
 header {
   background: #e6e5e0;
@@ -442,7 +462,7 @@ footer a {
   color: var(--body-text-inverse)
 }  
 
-
+/* #endregion main css -------------- */
 
 
 
@@ -458,6 +478,12 @@ footer a {
 }
 
 @media (min-width: 768px) {
+  
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
   
   .menu-toggle {
     display: none;
