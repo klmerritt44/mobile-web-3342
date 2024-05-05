@@ -333,7 +333,7 @@ header.primary h1 a {
 #cta-section {
   background: var(--dark-bg-opacity);
   color: var(--body-text-inverse);
-  padding: 1em;
+  padding: 1.5em;
   position: absolute;
   bottom: 20px;
 }
@@ -342,11 +342,16 @@ header.primary h1 a {
   color: var(--body-text-inverse);
   text-decoration: none;
   background: var(--dark-bg);
-  padding: 0.5em;
+  padding: 1em;
+  margin: 10px;
 }
 
 #cta-section a:hover {
   background: var(--dark-bg-opacity);
+}
+
+#cta-section h2 {
+  font-size: 2.2em;
 }
 
 section.services {
@@ -361,7 +366,6 @@ section.services article {
 section.services a {
   text-decoration: none;
   color: var(--body-text);
-  
 }
 
 
@@ -494,6 +498,8 @@ footer a {
       height: 60vh;
       background: cover;
     }
+
+
 
     section.services {
       margin: 60px;
