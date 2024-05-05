@@ -25,7 +25,8 @@ html {
     box-sizing: inherit;
   }
 
-  /*-------------- global styles ------------- */
+  /* #region global styles ------------- */
+
  body {
   font-family: 'open sans';
   font-size: 1rem;
@@ -81,8 +82,10 @@ img {
   height: auto;
 }
 
+/* #endregion global styles---------- */
 
-/*----------------utility classes ----------------*/
+
+/* #region utility ----------------*/
 
   .container{
     width:80vw;
@@ -109,9 +112,14 @@ img {
     padding: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--body-text);
+}
+
 a:hover {
   color: var(--body-text);
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 
@@ -188,11 +196,41 @@ a:hover {
   clear: both;
 }
 
+/* #endregion utility */
+
 /* -----author's css ------*/
+
+header {
+  background: #e6e5e0;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+header.primary h1 {
+  float: left;
+}
+
+header.primary h1 a {
+  background: url(../includes/logo.png) no-repeat;
+  display: block;
+  width: 300px;
+  height: 90px;
+  margin: 0px auto 0px 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 .nav-container {
   width: 75%;
-  max-width: 1000px;
+  max-width: 1700px;
   margin: 0;
   background: var(--light-bg);
 }
@@ -290,34 +328,6 @@ a:hover {
   transform: translateY(-3px) rotate(-90deg);
 }
 
-header {
-  background: #e6e5e0;
-  color: #EBEBD3;
-  padding: 1em 0;
-  position: relative;
-}
-
-header::after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
-header.primary h1 {
-  float: left;
-}
-
-header.primary h1 a {
-  background: url(../includes/logo.png) no-repeat;
-  display: block;
-  width: 300px;
-  height: 90px;
-  margin: 0px auto;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
  #primary-hero {
   background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed-450.jpg);
   background-size: cover;
@@ -382,6 +392,10 @@ section.services a {
   margin-top: 10px;
 }
 
+.services a:hover {
+  font-weight: bold;
+}
+
 .services a.cta-button {
   display: block;
   padding: 10px;
@@ -433,9 +447,7 @@ footer a {
 
 
 
-
-
-/*----------------------media queries-----------------------*/
+/* #region media-queries -----------------------*/
 
 @media (min-width: 576px) {
   #cta-section {
@@ -498,7 +510,13 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-    #primary-hero {
+  header.primary h1 a {
+    margin: 0px auto 0px 60px;
+    background: url(../includes/logo-200.png) no-repeat;
+    height: 125px;
+  }  
+
+  #primary-hero {
       background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed.jpg);
       height: 60vh;
       background: cover;
@@ -625,7 +643,7 @@ footer a {
   }
 }
 
-
+/* #endregion media queries----------- */
 
 
 /* logo color scheme 

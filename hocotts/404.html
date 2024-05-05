@@ -1,10 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Page not found.">
+  <meta name="author" content="Kristena Merritt">
+  <meta name="robots" content="noindex">
+
+  <meta property="og:title" content="Hocott's Garden Center">
+  <meta property="og:image" content="assets/includes/social-image.jpg">
+  <meta property="og:image:alt" content="Hocott's Garden Center store owners smiling around geraniums.">
+
+  <link rel="icon" href="assets/includes/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/includes/icon.png">
   <style>
     * {
       line-height: 1.2;
@@ -52,11 +63,50 @@
     }
   </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F49NXKQMNJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  gtag('config', 'G-F49NXKQMNJ');
+</script>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+  </body>
+  <footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13110.832723377938!2d-92.3310699!3d34.7629432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2a36550a9f521%3A0x3a45e6fd2f8604d2!2sHocott&#39;s%20Garden%20Center!5e0!3m2!1sen!2sus!4v1714429733509!5m2!1sen!2sus" width="350" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="store-info">
+      <div itemscope itemtype="https://schema.org/LocalBusiness">
+        <h3><span itemprop="name">Hocott's Garden Center</span></h3>
+        <span itemprop="description" class="hidden"> A superb collection of plants and gardening supplies.</span>
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <address>
+            <span itemprop="streetAddress">3612 Kavanaugh Blvd</span>
+            <span itemprop="addressLocality"> Little Rock</span>,
+            <span itemprop="addressRegion">AR</span>
+          </address>
+        </div>
+        Phone: <span itemprop="telephone">501-647-6171</span>
+      </div>
+      <div class="hours">
+        <p>Monday-Tuesday: Closed</p>
+        <p>Wednesday-Saturday: 9:00am - 4:00pm</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+    <h6>
+      &copy; 2024 Hocott's Garden Center |
+      <a href="https://planthardiness.ars.usda.gov/">USDA Plant Hardiness Map</a> |
+      <a href="contact.html">Contact&nbsp;Us</a> |
+      <a href="#top">Back to the Top</a>
+    </h6>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
