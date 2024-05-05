@@ -109,10 +109,6 @@ img {
     padding: 5px;
 }
 
-a.cta {
-
-}
-
 a:hover {
   color: var(--body-text);
   font-weight: bold;
@@ -336,6 +332,7 @@ header.primary h1 a {
   padding: 1.5em;
   position: absolute;
   bottom: 20px;
+  max-width: 90%;
 }
 
 #cta-section a {
@@ -402,7 +399,7 @@ section.services a {
   padding-bottom: 10px;
 }
 
-#blog article.post a {
+#blog a {
   text-decoration: none;
   color: var(--body-text);
   font-size: .9em;
@@ -439,6 +436,14 @@ footer a {
 
 
 /*----------------------media queries-----------------------*/
+
+@media (min-width: 576px) {
+  #cta-section {
+    width: 100%;
+    max-width: unset;
+  }
+
+}
 
 @media (min-width: 768px) {
   
@@ -498,8 +503,6 @@ footer a {
       height: 60vh;
       background: cover;
     }
-
-
 
     section.services {
       margin: 60px;
