@@ -369,6 +369,46 @@ header.primary h1 a {
   position: relative;
 }
 
+#about-hero {
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hanging-plants-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+
+#landscaping-hero {
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/landscape-design-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+
+#gallery-hero {
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/allium-giganteum-flower-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+
+#blog-hero {
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hydrangea-garden-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+
+#contact-hero {
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/dream-backyard-800.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  position: relative;
+}
+
 #cta-section {
   background: var(--dark-bg-opacity);
   color: var(--body-text-inverse);
@@ -551,7 +591,31 @@ footer a {
   #primary-hero {
       background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/raised-garden-bed.jpg);
       height: 60vh;
-      background: cover;
+    }
+    
+    #about-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hanging-plants.jpg);
+      height: 60vh;
+    }
+    
+    #landscaping-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/landscape-design.jpg);
+      height: 60vh;
+    }
+    
+    #gallery-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/allium-giganteum-flower.jpg);
+      height: 60vh;
+    }
+    
+    #blog-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hydrangea-garden.jpg);
+      height: 60vh;
+    }
+    
+    #contact-hero {
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/dream-backyard.jpg);
+      height: 60vh;
     }
 
     section.services {
