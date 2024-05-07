@@ -108,7 +108,7 @@ img {
 
   .container{
     width:80vw;
-    margin: 40px auto 80px auto;
+    margin: 60px auto 80px auto;
     max-width: 1000px;
 }
 
@@ -394,7 +394,7 @@ header.primary h1 a {
 }
 
 #blog-hero {
-  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hydrangea-garden-800.jpg);
+  background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/houseplants-color-800.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -429,14 +429,12 @@ section.services {
 
 section.services article {
   text-align: center;
-
 }
 
 section.services a {
   text-decoration: none;
   color: var(--body-text);
 }
-
 
 .grid {
   display: grid;
@@ -484,8 +482,50 @@ section.services a {
 #blog a svg {
   width: 15px;
   margin-left: 5px;
-
 }
+
+/* #region image slider----------------- */
+
+#image-slider {
+  padding: 4em 0;
+  max-width: 800px;
+  width: 80vw;
+  margin: 40px auto;
+}
+
+div.see-more {
+  text-align: center;
+  margin-top: 90px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+color: #000;
+font-size: 2rem;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+  color:#787878;
+}
+
+.slick-prev .slick-prev-icon:before {
+  margin: -2rem;
+}
+
+/* #endregion image slider------------*/
 
 footer {
   background: var(--dark-bg);
@@ -609,7 +649,7 @@ footer a {
     }
     
     #blog-hero {
-      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/hydrangea-garden.jpg);
+      background-image: url(https://klmerritt44.github.io/mobile-web-3342/hocotts/assets/img/houseplants-color.jpg);
       height: 60vh;
     }
     
