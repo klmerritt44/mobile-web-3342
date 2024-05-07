@@ -62,9 +62,12 @@ h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.7em;
     color: var(--subheader-color);
-    
 }
 
+    h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    }
 /* #region main css -------- */
 
 main {
