@@ -1,0 +1,51 @@
+These notes are only for desktop, but many should also apply to tablet and phone. I'll take a look at those platforms shortly, but I haven't done so yet.
+
+Overall, it's a nice, functional site with great aesthetics. If you were to work with the actual company and fill the site out with content, it could be a real winner! The main thing in that case would be to add a store or shopping page since plant sales are a big part of their business, but that's well beyond the scope of this course.
+
+Great job!
+
+
+
+Key:
+  (1) -- Functional
+  (2) -- Style / Consistency
+  (3) -- Aesthetic / Preference
+  (4) -- Note
+
+
+
+
+(1) Landscape and Contact: Forms on don't have submit buttons.
+
+(2) Home: the "Get Started" CTA widens on hover to accommodate the bold. Would look better if the background were a consistent size rather than resizing with the bolded text.
+
+(2) Header: a "Home" nav link and a logo that links to the homepage are redundant with each other.
+
+(2) Footer: in the business hours, weekday ranges do not have spaces between the day names and hyphens, whereas the time does; i.e., "Monday-Tuesday" and "Wednesday-Saturday" but "9:00am - 4:00pm".
+
+(2) Footer: furthermore in the business hours, you can combine Monday-Tuesday and Sunday to have a single Sunday-Tuesday entry since it's closed all three of those days.
+
+(2) About: "Explore our products and services!" looks a little low; it has more separation above it than "Nurturing Your Landscape Since 1939" does.
+  - Also applies to second h2 on Landscaping.
+
+(2) About: "Contact Us Today" section should have a link to the Contact page.
+
+(2*) Landscape and Contact: if possible, apply a matching (or at least close) stylesheet to the forms.
+
+(2) Blog: "See All" link is pointless here, as it goes to this page.
+
+(3) Header: Top nav menu may look better with a centered vertical alignment. Not strictly necessary given that it's still easy to spot and makes for a good negative space above the hero image.
+
+(3) Home/General: I really like the green on the translucent bar across the hero image and in its opaque version in the footer, but it's maybe ever so slightly dark on the CTA buttons.
+
+(3) Home/General: The light text appears to be the same color as the page's background. This looks fine in the hero banner, but the "Explore Services" CTA looks like the text is a "hole" in the button. White would look a little better there.
+
+(3) Footer: has a lot of blank space. There may be ways to fill it out some.
+
+(3) General: I would prefer if outgoing links opened in a new tab. :P
+
+(3) Blog: I feel that it would be good to have a featured or most recent blog post immediately visible on the Blog page alongside the links.
+
+(4) Header: text in the logo is a little hard to read because of the odd color combination on "Hocott's" and the drop shadow on "Garden Center". It's not on you to design a new web logo for them, but that would be a consideration if this were an actual client.
+
+(4) General: in a v2, you may consider having a storefront on the site.

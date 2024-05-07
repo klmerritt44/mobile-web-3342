@@ -1,0 +1,44 @@
+Tablet:
+
+Overall: the footer looks very nice in this mode.
+
+Notes refer to portrait mode unless otherwise noted.
+
+
+(2) Header/Landscape: The nav menu sits below the logo.
+
+(2) About: the first paragraph under "Nurturing Your Landscape..." is really narrow. Either the image needs to shrink some or the text needs to sit underneath it.
+
+(2) Gallery: The images below "Check out these beauties in store!" have no spacing between them.
+
+(3) Header: it's a little hard to describe, but the logo is slightly blurry-looking, though it remains legible. It may be worth looking at into an alternate logo image that works better with retina displays that loads when appropriate. I don't know, though: it may just be how this tablet displays that particular green and orange that makes it a little hard to look at.
+
+(3) Header: I think you could have a nonhamburger nav, more like the desktop site, on tablet. Not a huge deal, but it removes one click when navigating to another page.
+
+(3) Home: "Explore Services" CTA is a little small in this medium.
+
+(3) Home: the image of the spider plant is a little tall on the screen and pushes the content down a bit too far.
+
+(3) Landscaping: the second paragraph wraps after the second word, which looks weird.
+
+==========
+
+Phone:
+
+Overall: Very good placements. No suggestions for portrait view.
+
+Notes refer to landscape view only.
+
+
+(2) General: body text is really big. When I flip the phone back to portrait mode, it shrinks to an appropriate size. Notably, the headings don't change sizes between the two modes.
+  - Is the font size percentage-based rather than em-based?
+
+(2) Header / CTA: as with tablet, the nav sits below the logo, but this time, it wraps Blog and Contact to a new line. Additionally, the CTA banner extends above the hero image and overlaps with Blog and Contact in the nav. They are still clickable, however.
+  - Similar issue on the other pages, but the CTA doesn't overlap the Blog and Contact links.
+
+(2) Footer: the text is really big. I'd put this as a (3), but it's abnormally big compared to the text on the rest of the page--the home page, at least--and the outgoing-link icon remains the same size it is in portrait mode, so it looks really small.
+  - Is the font size percentage-based rather than em-based here?
+
+(2) About: Similar issue as with portrait-mode tablet: the first paragraph is really narrow.
+
+(3) Home: spider plant image is the phone version, but the blog links sit out to the right. The tablet version of the image--the taller one--would actually look good here.
