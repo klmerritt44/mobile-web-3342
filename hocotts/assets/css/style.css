@@ -503,6 +503,10 @@ section.services a {
   margin-left: 5px;
 }
 
+#contact-form iframe {
+  height: 650px;
+}
+
 /* #region image slider----------------- */
 
 #image-slider {
