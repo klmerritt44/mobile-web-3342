@@ -38,6 +38,13 @@ html {
   color: var(--body-text);
 }
 
+a[href^="https://"]::after,
+a[href^="http://"]::after {
+  content: url(../includes/external-icon.svg);
+  width: .8em;
+  display: inline-block;
+  margin-left: .3em;
+}
 
  h1,h2,h3,h4 {
   font-family: domine;
@@ -120,10 +127,8 @@ img {
   margin-top: 10px;
 }
 
-.cta-button a:hover {
-  background: var(--dark-bg-opacity);
-  color: var(--body-text-inverse);
-  text-decoration: none;
+.cta-button:hover {
+  font-weight: bold;
 }
 
 .img-right{
@@ -226,6 +231,14 @@ img {
 .three-col-grid {
   display: grid;
   margin-bottom: 30px;
+}
+
+.callout {
+    background: var(--dark-bg-opacity);
+    color: var(--body-text-inverse);
+    padding: 1.5em;
+    bottom: 20px;
+    max-width: 100%;
 }
 
 /* #endregion utility */
@@ -452,10 +465,6 @@ section.services a {
   margin-top: 10px;
 }
 
-.services a:hover {
-  font-weight: bold;
-}
-
 .services a.cta-button {
   display: block;
   padding: 10px;
@@ -661,6 +670,12 @@ footer a {
     section.services {
       margin: 60px;
     }
+
+    div.grid.image-gallery {
+      max-width: 1500px;
+      margin: auto;
+    }
+
 
     .services .grid article a {
       display: block;
